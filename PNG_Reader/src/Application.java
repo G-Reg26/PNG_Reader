@@ -11,7 +11,7 @@ public class Application {
     BufferedImage img = null;
     
     try {
-      img = ImageIO.read(new File("cropedtestimage.png"));
+      img = ImageIO.read(new File("res/CropedTestImage.png"));
     } catch (IOException e) {
       System.out.println("Failed to get Image");
     }
