@@ -94,6 +94,16 @@ public class Application {
           + sprite.getSumOfColorValues());
     }
     
+    System.out.println();
+    
+    for (Sprite sprite : sprites) {
+      System.out.println("Average color values of " + sprite.getName() + ": "
+          + sprite.getAverageColorValue());
+      sprite.generateImage();
+    }
+    
+    System.out.println();
+    
     System.out.println("Goodbye");
 
     scan.close();
